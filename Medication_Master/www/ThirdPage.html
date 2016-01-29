@@ -1,0 +1,89 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- Latest compiled and minified CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+       <!-- Optional theme -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+       <link rel="stylesheet" href="style.css">
+       <!-- Latest compiled and minified JavaScript -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+       <script src="scripts.js"></script>
+    </head>
+    <body>
+<div class="container">
+    <form>
+          <div class="row">
+              <div class="col-xs-12"  align="center"><h1></h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-2"><h3>Names</h3></div>
+              <div class="col-xs-7"><h3>Days</h3></div>
+              <div class="col-xs-3"><h3>Times</h3></div>
+          </div>
+          <div class ="row"> 
+              <table class="table table-striped table-condensed table table-bordered" id="list">
+              <tr>
+                 <td class="col-xs-2" colspan="2">Name</td>
+                 <td class="col-xs-1">Mon</td>
+                 <td class="col-xs-1">Tues</td>
+                 <td class="col-xs-1">Wed</td>
+                 <td class="col-xs-1">Thur</td>
+                 <td class="col-xs-1">Fri</td>
+                 <td class="col-xs-1">Sat</td>
+                 <td class="col-xs-1">Sun</td>
+                 <td class="col-xs-1">Morn</td>
+                 <td class="col-xs-1">After</td>
+                 <td class="col-xs-1">Even</td>
+              </tr>
+              <tr>
+                  <td class="col-xs-2" colspan="2">
+                  </td>
+                  <td class="col-xs-1" align="center">  
+                      <input type="checkbox" name="monday[0]" id="monday0" />
+                  </td>
+                  <td class="col-xs-1" align="center"> 
+                      <input type="checkbox" name="tuesday[0]" id="tuesday0" />
+                  </td>
+                  <td class="col-xs-1" align="center">              
+                      <input type="checkbox" name="wednesday[0]" id="wednesday0" />
+                  </td>
+                  <td class="col-xs-1" align="center"> 
+                      <input type="checkbox" name="thursday[0]" id="thursday0" />
+                  </td>
+                  <td class="col-xs-1" align="center">   
+                      <input type="checkbox" name="friday[0]" id="friday0" />
+                  </td>
+                  <td class="col-xs-1" align="center">   
+                      <input type="checkbox" name="saturday[0]" id="saturday0" />
+                  </td>
+                  <td class="col-xs-1" align="center">
+                      <input type="checkbox" name="sunday[0]" id="sunday0" />
+                  </td>
+                  <td class="col-xs-1" align="center">   
+                      <input type="checkbox" name="morning[0]" id="morning0" />
+                  </td>
+                  <td class="col-xs-1" align="center">    
+                      <input type="checkbox" name="lunch[0]" id="lunch0" />
+                  </td>
+                  <td class="col-xs-1" align="center">               
+                      <input type="checkbox" name="evening[0]" id="afternoon0" />
+                  </td>
+              </tr>
+              </table>
+              <table class="table table-striped table-condensed">
+              <tr>
+                  <td><button type="button" class="btn btn-default btn-lg" onclick="addRow()">+</button></td>
+                  <td><a href="notifications.html" class="btn btn-danger btn-lg pull-right">Done</a></td>
+              </tr>
+              </table>
+          </div>
+        </form>   
+        </div> 
+    </body>
+      <style type="text/css">
+   body { background: #FFD9BF; }
+  </style>
+</html>

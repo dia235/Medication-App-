@@ -1,0 +1,58 @@
+<html> 
+    <head> 
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
+       <!-- Optional theme -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+       <link rel="stylesheet" href="style.css">
+       <!-- Latest compiled and minified JavaScript -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+       <script src="rows.js"></script>
+    </head>
+    
+    <body> 
+        <div class="container">
+          <div class="row">
+              <div class="col-xs-12"  align="center"><h1>List your Medication</h1>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-6"><h5><strong>Name your Medication</strong></h5>
+              </div>
+
+              <div class="col-xs-6"><h5><strong>Add an Image</strong></h5>
+              </div>
+          </div>
+          <div class ="row" id="list"> 
+              <table id="medications" class="table table-striped table-condensed">
+              <tr>
+                  <td>
+                        <div class="col-xs-6">
+                        <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="basic-addon0">1</span>
+                        <input type="text" class="form-control" placeholder="Type here" name="NameyourMedication[0]" id="Name0" />
+                        </div>
+                        </div>
+                 </td>
+                 
+                  <td>
+                    ...
+                  </td>
+              
+              </tr>
+              </table>
+              <table class="table table-striped table-condensed">
+              <tr>
+                  <td><button type="button" class="btn btn-default btn-lg" onclick="addRow()">+</button></td>
+                  <td><a href="ThirdPage.html" class="btn btn-danger btn-lg pull-right">Done</a></td>
+              </tr>
+              </table>
+          </div>
+        </div> 
+    </body>
+    <style type="text/css">
+   body { background: #EBDFEB; }
+  </style>
+</html>
